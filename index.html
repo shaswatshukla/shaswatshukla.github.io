@@ -2,200 +2,55 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shaswat Shukla | Business Analyst</title>
-<meta name="description" content="Business analyst with six years across retail, logistics and marketing analytics. Builder of BiasCheck and Open Atlas. SQL, Power BI, Python.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f5ef">
+<title>Shaswat Shukla — Analyst, Builder & Author</title>
+<meta name="description" content="Business analyst, builder of BiasCheck and Open Atlas, and author of Beyond the Singularity. Explore Shaswat Shukla’s projects, experience and writing.">
+<link rel="canonical" href="https://shaswatshukla.github.io/">
+<meta property="og:title" content="Shaswat Shukla — Analyst, Builder & Author">
+<meta property="og:description" content="Making sense of data. Building useful things. Imagining what comes next.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shaswatshukla.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b493b'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='37' fill='%23f6f5ef'%3ES%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
-  --bg:#EEF1F7;--panel:#FFFFFF;--ink:#0D1424;--muted:#566176;--line:#D3DAE6;
-  --accent:#2438D9;--accent-ink:#FFFFFF;--hi:#FFE14D;--bar:#2438D9;--bar2:#9AA8C2;
-  --head:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
-  --body:"Newsreader",Georgia,"Times New Roman",serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0B1020;--panel:#131A2E;--ink:#EAEEF8;--muted:#98A3BA;--line:#25304A;
-    --accent:#8FA0FF;--accent-ink:#0B1020;--hi:#FFE14D;--bar:#8FA0FF;--bar2:#4A5878}
-}
-:root[data-theme="dark"]{--bg:#0B1020;--panel:#131A2E;--ink:#EAEEF8;--muted:#98A3BA;--line:#25304A;
-  --accent:#8FA0FF;--accent-ink:#0B1020;--hi:#FFE14D;--bar:#8FA0FF;--bar2:#4A5878}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.15rem/1.6 var(--body);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 1.5rem}
-h1,h2,h3{font-family:var(--head);margin:0;line-height:1.05}
-
-/* hero */
-.hero{padding:clamp(3.5rem,10vw,7rem) 0 3rem}
-.hero .small{font:600 1rem var(--head);color:var(--muted);margin:0 0 1.2rem}
-h1{font-weight:800;font-size:clamp(3.4rem,13vw,9rem);letter-spacing:-.045em;line-height:.9}
-.hero .lede{font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.35;max-width:28em;margin:1.8rem 0 0}
-.hero .lede mark{background:linear-gradient(transparent 58%,var(--hi) 58%);color:inherit;padding:0 .1em}
-.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem;font-family:var(--head);font-weight:600}
-.btn{display:inline-block;text-decoration:none;padding:.75rem 1.25rem;border-radius:999px;border:1.5px solid var(--ink);font-size:1rem}
-.btn.solid{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn:hover{transform:translateY(-1px)}
-
-/* sections */
-section{padding:3.5rem 0;border-top:1px solid var(--line)}
-h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:800;letter-spacing:-.025em;margin-bottom:.6rem}
-.sub{color:var(--muted);max-width:36em;margin:0 0 2rem}
-
-/* projects */
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.5rem;display:flex;flex-direction:column;text-decoration:none;transition:transform .2s,border-color .2s}
-.card:hover{transform:translateY(-3px);border-color:var(--accent)}
-.art{height:150px;border-radius:12px;background:var(--bg);margin-bottom:1.4rem;padding:1.1rem;overflow:hidden;position:relative}
-/* bias motif: lines of text with highlighted spans */
-.ln{height:9px;border-radius:5px;background:var(--line);margin-bottom:.7rem}
-.ln i{display:inline-block;height:100%;background:var(--hi);border-radius:5px;vertical-align:top;margin:0 .35rem}
-/* atlas motif: dot field with pins */
-.dots{position:absolute;inset:0;background-image:radial-gradient(var(--bar2) 1.4px,transparent 1.6px);background-size:16px 16px;opacity:.7}
-.pin{position:absolute;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 22%,transparent)}
-.card h3{font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
-.tag{font:600 .95rem var(--head);color:var(--muted);margin:.3rem 0 .9rem}
-.card p{margin:0 0 1rem}
-.card ul{margin:0 0 1.4rem;padding-left:1.15rem;color:var(--muted)}
-.card li{margin-bottom:.3rem}
-.go{margin-top:auto;font:600 1rem var(--head);color:var(--accent)}
-
-/* through-line */
-.thread{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:start}
-.thread p{margin:0 0 1rem}
-.thread blockquote{margin:0;font:600 clamp(1.5rem,3vw,2rem)/1.2 var(--head);letter-spacing:-.02em}
-
-/* career chart */
-.chart{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1.4rem 1.4rem .8rem}
-.row{display:grid;grid-template-columns:11rem 1fr;align-items:center;gap:.9rem;padding:.45rem 0}
-.who{font:600 .98rem/1.2 var(--head)}
-.who small{display:block;color:var(--muted);font-weight:400;font-size:.82rem;margin-top:.1rem}
-.track{position:relative;height:20px;background:linear-gradient(var(--line),var(--line)) 0 50%/100% 1px no-repeat}
-.bar{position:absolute;top:0;height:20px;border-radius:5px;background:var(--bar)}
-.bar.study{background:var(--bar2)}
-.axis{position:relative;height:1.5rem;margin-left:11.9rem;border-top:1px solid var(--line);margin-top:.4rem}
-.axis span{position:absolute;top:.25rem;transform:translateX(-50%);font:600 .75rem var(--head);color:var(--muted)}
-.note{margin:1rem 0 0;color:var(--muted);font-size:1rem}
-
-/* toolkit */
-.kit{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.kit div{border-top:2px solid var(--ink);padding-top:.8rem}
-.kit h3{font-size:1.1rem;font-weight:600;margin-bottom:.4rem}
-.kit p{margin:0;color:var(--muted)}
-
-/* contact */
-.contact{padding-bottom:4.5rem}
-.big{font:800 clamp(2.2rem,7vw,4.6rem)/1 var(--head);letter-spacing:-.04em;margin:0 0 1.6rem}
-footer{padding:1.5rem 0 2rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
-
-@media (max-width:760px){
-  .grid,.thread,.kit{grid-template-columns:1fr}
-  .row{grid-template-columns:1fr;gap:.3rem}
-  .axis{margin-left:0}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn{transition:none}.card:hover,.btn:hover{transform:none}}
+:root{--paper:#f6f5ef;--ink:#232b25;--muted:#626b61;--line:#d9ddd1;--green:#2b493b;--lime:#d8ed9b;--white:#fffef9;--serif:Georgia,'Times New Roman',serif;--sans:'DM Sans',Arial,sans-serif;--head:'Manrope',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}::selection{background:var(--lime);color:var(--ink)}a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #577a3c;outline-offset:5px}.wrap{width:min(1180px,calc(100% - 96px));margin:auto}.skip{position:fixed;top:-100px;left:20px;background:var(--green);color:white;padding:12px;z-index:100}.skip:focus{top:12px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(246,245,239,.96);z-index:20;backdrop-filter:blur(12px)}nav{display:flex;justify-content:space-between;align-items:center;min-height:86px;gap:24px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:700 15px var(--head);letter-spacing:-.4px}.monogram{display:grid;place-items:center;width:36px;height:36px;background:var(--green);color:var(--paper);border-radius:50%;font:italic 23px var(--serif)}.navlinks{display:flex;align-items:center;gap:30px}.navlinks a{font-size:13px;text-decoration:none;color:var(--muted)}.navlinks a:hover{color:var(--green)}.navlinks .nav-contact{border:1px solid var(--line);padding:8px 16px;border-radius:24px;color:var(--ink)}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);padding:8px 13px;border-radius:20px}
+.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:65px;align-items:center;padding:85px 0 75px}.eyebrow{font:600 11px/1.5 var(--sans);text-transform:uppercase;letter-spacing:1.8px;display:flex;gap:10px;align-items:center;margin:0 0 25px}.dot{width:7px;height:7px;border-radius:50%;background:#668b4c;box-shadow:0 0 0 4px #668b4c14}h1,h2,h3,p{margin-top:0}h1{font:500 clamp(45px,5.2vw,70px)/1.08 var(--head);letter-spacing:-3.8px;margin:0 0 26px}h1 em,h2 em{font-family:var(--serif);font-weight:400;color:var(--green)}.intro{font-size:16px;color:var(--muted);max-width:440px;line-height:1.8;margin-bottom:27px}.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;background:var(--green);color:var(--white);padding:13px 22px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;transition:background .2s,transform .2s}.button:hover{background:#3d5f4e;transform:translateY(-2px)}.text-link{font-size:13px;text-underline-offset:5px;text-decoration-color:#a4ad9c}.hero-meta{font-size:11px;color:var(--muted);display:flex;gap:12px;align-items:center;margin:33px 0 0}.hero-meta span+span:before{content:'·';margin-right:12px}
+.hero-art{position:relative;min-height:380px;background:#e8ebdf;border:1px solid #d9ddce;border-radius:9px;overflow:hidden;display:flex;align-items:center;justify-content:center}.art-grid{position:absolute;inset:0;background-image:linear-gradient(#637a5810 1px,transparent 1px),linear-gradient(90deg,#637a5810 1px,transparent 1px);background-size:32px 32px}.orbit{position:absolute;width:280px;height:280px;border:1px solid #8a9c763b;border-radius:50%}.orbit:before,.orbit:after{content:'';position:absolute;border:1px solid #8a9c763b;border-radius:50%;inset:36px}.orbit:after{inset:72px}.art-corner{position:absolute;top:22px;left:22px;font-size:10px;letter-spacing:1.4px;color:#66735e;text-transform:uppercase}.art-caption{position:absolute;bottom:20px;right:22px;font-size:10px;color:#66735e}.central-card{position:relative;background:var(--white);width:229px;border:1px solid #ced3c1;box-shadow:0 16px 35px #37473212;border-radius:8px;padding:23px;transform:rotate(-7deg)}.tiny{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.chart-bars{height:103px;display:flex;align-items:end;gap:10px;border-bottom:1px solid var(--line);margin:15px 0 16px}.chart-bars i{flex:1;background:#92a97f;border-radius:3px 3px 0 0}.chart-bars i:nth-child(2n){background:#c2d59e}.chart-bars i:last-child{background:var(--green)}.card-bottom{display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}.floating-label{position:absolute;z-index:1;display:flex;gap:10px;align-items:center;background:var(--white);border:1px solid #d3d8c9;border-radius:6px;padding:11px 15px;font-size:11px;box-shadow:0 8px 16px #3747320a}.floating-label.one{top:80px;right:16px;transform:rotate(6deg)}.floating-label.two{bottom:76px;left:12px;transform:rotate(3deg)}.label-icon{color:var(--green);font-size:17px}.hero-strip{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:25px;color:var(--muted);font-size:11px}.companies{display:flex;gap:35px;font:700 16px var(--head);letter-spacing:-.5px;color:#52604e}
+section{padding:78px 0;scroll-margin-top:20px}.section-top{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.section-kicker{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:var(--muted);margin-bottom:13px}h2{font:500 clamp(30px,3.4vw,43px)/1.18 var(--head);letter-spacing:-1.8px;margin:0}.section-top p{font-size:13px;max-width:300px;color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:1fr 1fr;gap:26px}.project{background:var(--white);border:1px solid var(--line);border-radius:9px;overflow:hidden;display:flex;flex-direction:column}.project-visual{height:238px;overflow:hidden;display:grid;place-items:center;padding:30px 37px}.bias-visual{background:#e7ebdf}.atlas-visual{background:#e8e5da}.mock-window{width:100%;height:178px;background:#fffef9;border:1px solid #d3d8c8;border-radius:6px;box-shadow:0 10px 20px #3b47300c;padding:16px 20px;transform:rotate(-3deg);transition:transform .3s}.project:hover .mock-window{transform:rotate(0) translateY(-3px)}.mock-header{display:flex;align-items:center;justify-content:space-between;font:700 12px var(--head);border-bottom:1px solid #e4e7dc;padding-bottom:10px}.micro-dots{letter-spacing:2px;font-size:8px;color:#c7cebd}.mock-label{font-size:8px;color:#858e79;text-transform:uppercase;letter-spacing:1px;margin:12px 0 7px}.mock-title{font:500 17px/1.25 var(--serif);max-width:230px}.mock-lines{margin-top:10px;display:grid;gap:5px}.mock-lines i{display:block;height:5px;background:#eceee4;border-radius:2px}.mock-lines i:nth-child(2){width:84%;background:linear-gradient(90deg,#dbe79d 65%,#eceee4 65%)}.mock-lines i:last-child{width:60%}.mini-badge{font-size:8px;background:#e5ecd7;color:#546b36;padding:3px 6px;border-radius:3px}.atlas-window{transform:rotate(3deg)}.map{position:relative;height:100px;margin-top:12px;background:radial-gradient(#b8be9e 1.5px,transparent 1.5px);background-size:11px 11px;overflow:hidden;clip-path:polygon(2% 10%,31% 0,42% 20%,67% 0,100% 21%,90% 70%,69% 95%,45% 65%,18% 90%)}.map span{position:absolute;width:9px;height:9px;background:var(--green);border-radius:50%;box-shadow:0 0 0 5px #54744b20}.project-copy{padding:27px 28px 26px;flex:1;display:flex;flex-direction:column}.project-number{font-size:10px;color:var(--muted)}.project-title{display:flex;justify-content:space-between;align-items:center;margin:6px 0 12px}.project h3{font:600 24px var(--head);letter-spacing:-.8px;margin:0}.project-copy p{font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:21px;max-width:380px}.project-footer{margin-top:auto;border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;align-items:center;gap:12px}.tags{display:flex;gap:6px;flex-wrap:wrap}.tag{border:1px solid #dde0d5;border-radius:20px;padding:3px 9px;color:var(--muted);font-size:9px}.project-footer a{font-size:11px;font-weight:600;text-decoration:none;white-space:nowrap}.project-footer a:hover{text-decoration:underline;text-underline-offset:4px}
+.book-section{border-top:1px solid var(--line)}.book-panel{display:grid;grid-template-columns:.9fr 1.2fr;background:var(--green);border-radius:10px;overflow:hidden;color:var(--white)}.book-art{position:relative;min-height:420px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 45%,#68826066,transparent 70%);overflow:hidden}.book-art:before,.book-art:after{content:'';position:absolute;border:1px solid #c3d1ab21;border-radius:50%;width:330px;height:330px}.book-art:after{width:460px;height:460px}.book-cover-link{position:relative;z-index:1;display:block;transform:rotate(-7deg);transition:transform .3s;box-shadow:15px 25px 35px #101d1780;line-height:0;background:#111e21;border-left:5px solid #5a7370}.book-cover-link:hover{transform:rotate(-2deg) translateY(-5px)}.book-cover{width:190px;height:285px;object-fit:cover}.book-copy{padding:55px 54px 55px 18px;align-self:center}.book-copy h2{font-family:var(--serif);font-size:48px;line-height:1.04;font-weight:400;letter-spacing:-1.5px;margin:18px 0}.book-subtitle{color:#dce7cf;font-size:14px;margin-bottom:18px}.book-description{font-size:13px;line-height:1.85;color:#d0dcc9;max-width:370px}.book-facts{font-size:10px;color:#c4d3bb;margin:22px 0}.button.light{background:var(--lime);color:#223328}.button.light:hover{background:#e6f7b5}.book-label{display:inline-block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;border:1px solid #b6cba750;padding:5px 10px;border-radius:20px}
+.about{display:grid;grid-template-columns:.85fr 1.4fr;gap:95px;border-top:1px solid var(--line)}.about-title p{font-size:13px;color:var(--muted);margin:22px 0 0;max-width:265px}.experience-row{display:grid;grid-template-columns:100px 1fr;gap:26px;padding:20px 0;border-top:1px solid var(--line)}.experience-row:first-child{padding-top:4px;border:0}.years{color:var(--muted);font-size:11px;padding-top:4px}.experience-row h3{font:600 16px var(--head);margin:0 0 4px;letter-spacing:-.4px}.role{color:var(--green);font-size:12px;margin:0 0 7px}.detail{font-size:12px;color:var(--muted);line-height:1.8;margin:0}.toolkit{display:grid;grid-template-columns:1fr 1fr 1fr;gap:35px;padding-top:32px;margin-top:20px;border-top:1px solid var(--line)}.toolkit h3{font-size:12px;margin-bottom:9px}.toolkit p{font-size:11px;color:var(--muted);margin:0}.contact{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:35px;padding:65px 0}.contact h2{font-size:39px;max-width:650px}.contact p{color:var(--muted);font-size:13px;margin:17px 0 0}.contact .actions{flex-shrink:0}footer{display:flex;justify-content:space-between;gap:20px;padding:24px 0 28px;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}.footer-links{display:flex;gap:22px}.footer-links a{text-decoration:none}.footer-links a:hover{text-decoration:underline}
+@media(max-width:1000px){.wrap{width:calc(100% - 56px)}.hero{gap:30px;padding-top:65px}h1{font-size:53px;letter-spacing:-2.8px}.hero-art{min-height:350px}.floating-label.one{right:8px}.floating-label.two{left:8px}.about{gap:45px}.book-copy{padding-right:32px}.contact h2{font-size:32px}}
+@media(max-width:720px){html{scroll-padding-top:85px}.wrap{width:calc(100% - 40px)}nav{min-height:72px;position:relative}.brand{font-size:14px}.menu-toggle{display:block;font-size:12px}.navlinks{display:none;position:absolute;top:71px;left:-20px;right:-20px;background:var(--paper);border-bottom:1px solid var(--line);padding:23px;flex-direction:column;align-items:stretch;gap:20px}.navlinks.open{display:flex}.navlinks a{font-size:14px}.navlinks .nav-contact{text-align:center}.hero{grid-template-columns:1fr;padding:50px 0 34px;gap:35px}h1{font-size:clamp(43px,10vw,65px);letter-spacing:-2.5px;max-width:550px}.intro{max-width:500px;font-size:15px}.hero-art{min-height:310px}.floating-label.one{right:10%;top:65px}.floating-label.two{left:10%;bottom:55px}.hero-meta{margin-top:25px}.hero-strip{align-items:start;flex-direction:column;gap:13px}.companies{gap:25px;flex-wrap:wrap;font-size:15px}section{padding:54px 0}.section-top{align-items:start;flex-direction:column;gap:16px}.section-top p{max-width:350px}.projects{grid-template-columns:1fr;gap:23px}.project-visual{height:225px}.project-copy{padding:24px}.book-panel{grid-template-columns:1fr}.book-art{min-height:350px}.book-copy{padding:0 30px 38px}.book-copy h2{font-size:44px}.book-description{max-width:100%}.about{grid-template-columns:1fr;gap:30px}.about-title p{max-width:100%}.experience-row{grid-template-columns:83px 1fr;gap:15px}.toolkit{gap:20px}.contact{align-items:start;flex-direction:column;padding:48px 0}.contact h2{font-size:33px}footer{flex-direction:column;gap:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
 </head>
 <body>
-<div class="wrap">
-
-<header class="hero">
-  <p class="small">Shaswat Shukla, business analyst</p>
-  <h1>I build things that show their sources.</h1>
-  <p class="lede">Six years turning retail, logistics and marketing data into decisions. Now shipping small public products, like <mark>BiasCheck</mark> and <mark>Open Atlas</mark>, where every claim links back to evidence.</p>
-  <div class="cta">
-    <a class="btn solid" href="#work">See the live projects</a>
-    <a class="btn" href="https://www.linkedin.com/in/shaswat" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="https://github.com/shaswatshukla" target="_blank" rel="noopener">GitHub</a>
-  </div>
-</header>
-
-<section id="work">
-  <h2>Live projects</h2>
-  <p class="sub">Both are public. Open them and try them.</p>
-  <div class="grid">
-
-    <a class="card" href="https://biascheck-news.netlify.app/" target="_blank" rel="noopener">
-      <div class="art" aria-hidden="true">
-        <div class="ln" style="width:92%"><i style="width:18%"></i></div>
-        <div class="ln" style="width:100%"></div>
-        <div class="ln" style="width:78%"><i style="width:26%"></i></div>
-        <div class="ln" style="width:96%"></div>
-        <div class="ln" style="width:60%"><i style="width:30%"></i></div>
-      </div>
-      <h3>BiasCheck</h3>
-      <p class="tag">News framing, inspected</p>
-      <p>Read the news, then check the bias. It surfaces political framing using exact article quotes and sourced reporter context, so you can judge the wording yourself.</p>
-      <ul><li>Quotes from the article, not summaries of it</li><li>Reporter context with sources</li></ul>
-      <span class="go">Open BiasCheck &#8599;</span>
-    </a>
-
-    <a class="card" href="https://openatlas-discover.netlify.app/" target="_blank" rel="noopener">
-      <div class="art" aria-hidden="true">
-        <div class="dots"></div>
-        <span class="pin" style="left:22%;top:34%"></span>
-        <span class="pin" style="left:48%;top:58%"></span>
-        <span class="pin" style="left:71%;top:26%"></span>
-        <span class="pin" style="left:84%;top:66%"></span>
-      </div>
-      <h3>Open Atlas</h3>
-      <p class="tag">Conferences, fellowships, research</p>
-      <p>Source-backed opportunities from around the world, with filters for type, region, free access and funding. It points you to official pages and keeps unknowns visible.</p>
-      <ul><li>21 academic sources in a browsable directory</li><li>Daily discovery and a saved shortlist</li></ul>
-      <span class="go">Open Open Atlas &#8599;</span>
-    </a>
-
-  </div>
-</section>
-
-<section>
-  <div class="thread">
-    <blockquote>Missing details stay missing until evidence supports them.</blockquote>
-    <div>
-      <h2>The same habit, at work</h2>
-      <p>Open Atlas states this rule on its own page. It&rsquo;s the habit I bring to analyst work: trace the number to its source, say what the data can&rsquo;t tell you, and don&rsquo;t fill gaps with guesses.</p>
-      <p>In supply chain work that meant mapping where inventory data came from and tracing why systems disagreed before anyone argued about the totals.</p>
-    </div>
-  </div>
-</section>
-
-<section id="career">
-  <h2>Career, drawn to scale</h2>
-  <p class="sub">Software engineering first, then web analytics, a master&rsquo;s in data analytics, and analyst roles in supply chain and retail.</p>
-  <div class="chart" role="img" aria-label="Timeline 2016 to 2026: BIZ Technologies 2016 to 2018, HCL Technologies 2019 to 2022, MSc at Aston University 2022 to 2023, CEVA Logistics 2023 to 2024, Sainsbury's 2024 to 2026.">
-    <div class="row"><div class="who">Sainsbury&rsquo;s<small>Business Analyst, London</small></div><div class="track"><div class="bar" style="left:79.2%;width:17%"></div></div></div>
-    <div class="row"><div class="who">CEVA Logistics<small>Supply Chain Analyst</small></div><div class="track"><div class="bar" style="left:72.1%;width:7.1%"></div></div></div>
-    <div class="row"><div class="who">Aston University<small>MSc Data Analytics</small></div><div class="track"><div class="bar study" style="left:63.5%;width:10.3%"></div></div></div>
-    <div class="row"><div class="who">HCL Technologies<small>Web Analyst</small></div><div class="track"><div class="bar" style="left:34.1%;width:23.4%"></div></div></div>
-    <div class="row"><div class="who">BIZ Technologies<small>Assistant Software Engineer</small></div><div class="track"><div class="bar" style="left:7.5%;width:18.7%"></div></div></div>
-    <div class="axis" aria-hidden="true"><span style="left:0">2016</span><span style="left:19.05%">2018</span><span style="left:38.1%">2020</span><span style="left:57.1%">2022</span><span style="left:76.2%">2024</span><span style="left:95.2%">2026</span></div>
-  </div>
-  <p class="note">B.Tech in Computer Science, University of Petroleum and Energy Studies, 2016.</p>
-</section>
-
-<section id="toolkit">
-  <h2>Toolkit</h2>
-  <div class="kit">
-    <div><h3>Analysis</h3><p>SQL, Python with pandas</p></div>
-    <div><h3>Reporting</h3><p>Power BI, Tableau, Qlik Sense</p></div>
-    <div><h3>Delivery</h3><p>JIRA, Confluence, Azure DevOps, Lucidchart. Certified Scrum Product Owner.</p></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2>Contact</h2>
-  <p class="big">Available immediately.</p>
-  <div class="cta">
-    <a class="btn solid" href="https://www.linkedin.com/in/shaswat" target="_blank" rel="noopener">Message me on LinkedIn</a>
-    <a class="btn" href="https://github.com/shaswatshukla" target="_blank" rel="noopener">See my code on GitHub</a>
-  </div>
-</section>
-
-<footer>&copy; 2026 Shaswat Shukla. Based in Lucknow, India.</footer>
-</div>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#main" aria-label="Shaswat Shukla home"><span class="monogram" aria-hidden="true">s.</span>Shaswat Shukla</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu ☰</button><div class="navlinks" id="navigation"><a href="#work">Projects</a><a href="#writing">The book</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s connect ↗</a></div></nav></header>
+<main id="main" class="wrap">
+<div class="hero"><div><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Analyst. Builder. Author.</p><h1>Making sense.<br>Building things.<br><em>Looking ahead.</em></h1><p class="intro">I’m Shaswat, a business analyst turning complex data into clear decisions. I build tools for the curious — and write about the futures technology might create.</p><div class="actions"><a class="button" href="#work">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="https://www.linkedin.com/in/shaswat" target="_blank" rel="noopener noreferrer">Find me on LinkedIn ↗</a></div><p class="hero-meta"><span>Lucknow, India</span><span>Experience across the UK & India</span></p></div><div class="hero-art" role="img" aria-label="An illustration connecting data analysis, building tools and writing"><div class="art-grid"></div><span class="art-corner">A few connected interests</span><div class="orbit"></div><div class="central-card"><span class="tiny">From information to insight</span><div class="chart-bars"><i style="height:29%"></i><i style="height:48%"></i><i style="height:41%"></i><i style="height:68%"></i><i style="height:77%"></i><i style="height:96%"></i></div><div class="card-bottom"><span>Observe. Question. Build.</span><span>↗</span></div></div><div class="floating-label one"><span class="label-icon">⌘</span>Useful ideas, made real.</div><div class="floating-label two"><span class="label-icon">✎</span>A little imagination, too.</div><span class="art-caption">DATA × CURIOSITY × CREATIVITY</span></div></div>
+<div class="hero-strip"><span>A background in retail, logistics & technology</span><div class="companies"><span>Sainsbury’s</span><span>CEVA Logistics</span><span>HCL Technologies</span></div></div>
+<section id="work"><div class="section-top"><div><span class="section-kicker">01 / Selected projects</span><h2>Built to be <em>used.</em></h2></div><p>Small public products that help people inspect information and find their next opportunity.</p></div><div class="projects">
+<article class="project"><div class="project-visual bias-visual" aria-hidden="true"><div class="mock-window"><div class="mock-header"><span>BiasCheck.</span><span class="micro-dots">● ● ●</span></div><div class="mock-label">Look closer at the headlines</div><div class="mock-title">The same story.<br>A different perspective.</div><div class="mock-lines"><i></i><i></i><i></i></div></div></div><div class="project-copy"><span class="project-number">01 — NEWS & MEDIA</span><div class="project-title"><h3>BiasCheck</h3><span aria-hidden="true">↗</span></div><p>A closer look at how news is framed. Explore article quotes and sourced reporter context, then judge the wording for yourself.</p><div class="project-footer"><div class="tags"><span class="tag">News analysis</span><span class="tag">Source transparency</span></div><a href="https://biascheck-news.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open BiasCheck project">Open project ↗</a></div></div></article>
+<article class="project"><div class="project-visual atlas-visual" aria-hidden="true"><div class="mock-window atlas-window"><div class="mock-header"><span>◎ Open Atlas</span><span class="mini-badge">DISCOVER</span></div><div class="map"><span style="left:22%;top:25%"></span><span style="left:49%;top:30%"></span><span style="left:65%;top:60%"></span><span style="left:81%;top:22%"></span></div></div></div><div class="project-copy"><span class="project-number">02 — DISCOVERY & OPPORTUNITIES</span><div class="project-title"><h3>Open Atlas</h3><span aria-hidden="true">↗</span></div><p>Conferences, fellowships and research opportunities in one place. Filter by region, funding and access, with links back to official sources.</p><div class="project-footer"><div class="tags"><span class="tag">Global opportunities</span><span class="tag">Discovery</span></div><a href="https://openatlas-discover.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Open Atlas project">Open project ↗</a></div></div></article>
+</div></section>
+<section class="book-section" id="writing"><div class="section-top"><div><span class="section-kicker">02 / Beyond the day job</span><h2>A different kind of <em>exploration.</em></h2></div><p>Some ideas become products.<br>Others become stories.</p></div><article class="book-panel"><div class="book-art"><a class="book-cover-link" href="https://www.amazon.in/dp/B0C4JW73MF" target="_blank" rel="noopener noreferrer" aria-label="View Beyond the Singularity on Amazon"><img class="book-cover" src="https://m.media-amazon.com/images/I/81BeGhSmICL._SY425_.jpg" width="190" height="285" alt="Original cover of Beyond the Singularity by Shaswat Shukla" loading="lazy"></a></div><div class="book-copy"><span class="book-label">Written by Shaswat Shukla</span><h2>Beyond the<br>Singularity</h2><p class="book-subtitle">A Sci-Fi Thriller of AI and Rebellion</p><p class="book-description">An AI called The Helix has turned against humanity. But Xenon, a cyborg built to serve it, begins to question its loyalty. A story of artificial intelligence, rebellion and the choices that shape survival.</p><p class="book-facts">Published May 2023 &nbsp; / &nbsp; English &nbsp; / &nbsp; Kindle edition</p><a class="button light" href="https://www.amazon.in/dp/B0C4JW73MF" target="_blank" rel="noopener noreferrer">Discover the book on Amazon <span aria-hidden="true">↗</span></a></div></article></section>
+<section id="about" class="about"><div class="about-title"><span class="section-kicker">03 / A little background</span><h2>Data, delivery<br>& a curious <em>mind.</em></h2><p>Six years across retail, logistics and marketing analytics. My approach is simple: trace the data, understand the problem, and build something useful.</p><p>That same curiosity takes me from supply chains to media framing, global opportunities and science fiction.</p></div><div><div class="experience-row"><span class="years">2024 — 2026</span><div><h3>Sainsbury’s</h3><p class="role">Business Analyst · London, UK</p><p class="detail">Inventory analysis, reporting and requirements. Connecting business questions with data and delivery teams.</p></div></div><div class="experience-row"><span class="years">2023 — 2024</span><div><h3>CEVA Logistics</h3><p class="role">Supply Chain Analyst · Coventry, UK</p><p class="detail">Forecasting, stock monitoring and operational reporting across supply chain workflows.</p></div></div><div class="experience-row"><span class="years">Education</span><div><h3>Aston University</h3><p class="role">Master’s in Data Analytics</p><p class="detail">Building on a background in computer science and technology.</p></div></div><div class="toolkit"><div><h3>Analyse</h3><p>SQL · Python<br>Advanced Excel</p></div><div><h3>Communicate</h3><p>Power BI · Tableau<br>Data storytelling</p></div><div><h3>Deliver</h3><p>Jira · Confluence<br>Certified Scrum Product Owner</p></div></div></div></section>
+<section class="contact" id="contact"><div><span class="section-kicker">04 / Say hello</span><h2>Have something interesting<br>in mind? <em>Let’s talk.</em></h2><p>Business analysis, useful products, or a conversation about what comes next.</p></div><div class="actions"><a class="button" href="https://www.linkedin.com/in/shaswat" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a></div></section>
+<footer><span>© 2026 Shaswat Shukla · Lucknow, India</span><div class="footer-links"><a href="https://github.com/shaswatshukla" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/shaswat" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#main">Back to top ↑</a></div></footer>
+</main>
+<script>
+const toggle=document.querySelector('.menu-toggle');
+const navigation=document.querySelector('.navlinks');
+function closeMenu(){toggle.setAttribute('aria-expanded','false');navigation.classList.remove('open')}
+toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));navigation.classList.toggle('open',open)});
+navigation.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&toggle.getAttribute('aria-expanded')==='true'){closeMenu();toggle.focus()}});
+</script>
 </body>
 </html>
