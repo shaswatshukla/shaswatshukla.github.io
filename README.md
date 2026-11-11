@@ -2,6 +2,6 @@
 
 Personal portfolio at https://shaswatshukla.github.io/.
 
-A compact editorial portfolio inspired by the personal-portfolio entries in the [2025 Web Design Awards collection](https://www.webdesignawards.io/winners/2025). The design uses original local project screenshots, a restrained type scale, top navigation, featured project panels, compact project rows and native notes disclosures. No award badges or third-party portfolio assets are reproduced.
+An original personal-studio design with an interactive project workbench, category filters, an illustrated-by-real-screenshots project grid, a contrasting book section and career history. All content is static HTML; filtering and preview controls are progressive enhancements in app.js. Theme preference is stored locally. The interface respects reduced motion and supports keyboard navigation.
 
-Built with static HTML, CSS and JavaScript. Theme choice is stored locally. Previous Astrofy-derived markup has been adapted; its original MIT notice is retained in ASTROFY-LICENSE.txt.
+All seven projects and both books retain their original links and factual descriptions. Full descriptions and supporting facts are available in native details disclosures. Local fonts and images avoid runtime third-party dependencies.
