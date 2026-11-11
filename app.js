@@ -23,7 +23,7 @@ themeToggle.addEventListener('click', () => {
   const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = theme;
   document.documentElement.style.colorScheme = theme;
-  try { localStorage.setItem('portfolio-theme', theme); } catch {}
+  try { localStorage.setItem('portfolio-woodland-theme', theme); } catch {}
   renderTheme();
 });
 renderTheme();
