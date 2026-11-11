@@ -2,6 +2,6 @@
 
 Personal portfolio at https://shaswatshukla.github.io/.
 
-The sidebar shell and horizontal project-card layout are adapted from [Astrofy](https://github.com/manuelernestog/astrofy) by Manuel Ernesto Garcia, under the MIT license. See ASTROFY-LICENSE.txt. This adaptation is buildless HTML, CSS and JavaScript; no Astro runtime is required.
+A compact editorial portfolio inspired by the personal-portfolio entries in the [2025 Web Design Awards collection](https://www.webdesignawards.io/winners/2025). The design uses original local project screenshots, a restrained type scale, top navigation, featured project panels, compact project rows and native notes disclosures. No award badges or third-party portfolio assets are reproduced.
 
-Content includes seven public projects, two books, career history and contact links. Project and book notes use native details disclosures. Theme choice is stored locally.
+Built with static HTML, CSS and JavaScript. Theme choice is stored locally. Previous Astrofy-derived markup has been adapted; its original MIT notice is retained in ASTROFY-LICENSE.txt.
