@@ -31,7 +31,7 @@ renderTheme();
 const previews = [
   {name:'WageLens', description:'Payroll & salary screening', image:'assets/wagelens.jpg', href:'https://wagelens.vercel.app/'},
   {name:'BiasCheck', description:'News framing, inspected', image:'assets/biascheck.jpg', href:'https://biascheck-news.netlify.app/'},
-  {name:'Open Atlas', description:'Conferences, fellowships & research', image:'assets/open-atlas.jpg', href:'https://openatlas-discover.netlify.app/'}
+  {name:'Open Atlas', description:'Conferences, fellowships & research', image:'assets/open-atlas.jpg', href:'https://openatlass.netlify.app/'}
 ];
 const previewTabs = [...document.querySelectorAll('[data-preview]')];
 function choosePreview(index, focus = false) {
